@@ -8,14 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78e0707b-7e5d-4b57-b136-fd1c8ca1f83d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Business/Abstract/Mapping/IMapFrom.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Business/Abstract/Mapping/MappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieListDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/Abstract/IMovieDetailService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Abstract/IMovieDetailService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entitites/Entities/BranchLanguage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entitites/Entities/MovieContentLanguage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Park-Cinema/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Park-Cinema/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Abstract/IBranchService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Abstract/IBranchService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/Abstract/IMovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Abstract/IMovieService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/Business.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Business.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/Concret/MovieDetailManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Concret/MovieDetailManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Abstract/ISessionService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Abstract/ISessionService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Concret/BranchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Concret/BranchManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/Concret/MoviesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Concret/MoviesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Concret/SaleManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Concret/SaleManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Concret/SessionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Concret/SessionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/AboutUsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/AboutUsDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Branches/BranchDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Branches/BranchDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Movies/MovieDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieDetailDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Movies/MovieDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Movies/MovieFilterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieFilterDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Movies/MovieListDto.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/Dto/Sessions/SessionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Sessions/SessionDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Business/bin/Debug/net5.0/Business.pdb" afterDir="false" />
@@ -29,7 +38,6 @@
       <change beforePath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Business.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Debug/net5.0/Business.csproj.AssemblyReference.cache" afterDir="false" />
@@ -40,13 +48,14 @@
       <change beforePath="$PROJECT_DIR$/Business/obj/Debug/net5.0/ref/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/Debug/net5.0/ref/Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Business/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Business/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net5.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net5.0/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net5.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net5.0/Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net5.0/ref/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net5.0/ref/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Core.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net5.0/Core.csproj.AssemblyReference.cache" afterDir="false" />
@@ -57,9 +66,9 @@
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net5.0/ref/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net5.0/ref/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccess/Abstract/IMovieDetailDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/Abstract/IMovieDetailDal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/Concret/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/Concret/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccess/Concret/EFMovieDetailDal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/Concret/EFMovieDetailDal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/DataAccess.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/bin/Debug/net5.0/DataAccess.deps.json" afterDir="false" />
@@ -72,7 +81,6 @@
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/DataAccess.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/DataAccess.csproj.AssemblyReference.cache" afterDir="false" />
@@ -84,37 +92,16 @@
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/ref/DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/Debug/net5.0/ref/DataAccess.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccess/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/AboutUsDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/AboutUsDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/AdvertisingOfferDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/AdvertisingOfferDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/BranchDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/BranchDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/CampaignDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/CampaignDetailDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/CampaignDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/CampaignDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/FormatDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/FormatDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/HallDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/HallDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/ImaxDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/ImaxDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/LanguageDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/LanguageDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/LaserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/LaserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/MovieDetailDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieDetailDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/MovieDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/Movies/MovieDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/NavbarDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/NavbarDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/RowDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/RowDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/RulesDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/RulesDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/SeatDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/SeatDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Dto/SessionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Business/Dto/SessionDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccess/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccess/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entitites/Entities/AboutUs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/AboutUs.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/Entities/Branch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/Branch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/BranchHall.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/Format.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/Hall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/Hall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entitites/Entities/Language.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/Language.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/Entities/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/MovieDetail.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/MovieFormat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/Entities/Session.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/Entities/Session.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/Entity.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/ref/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/bin/Debug/net5.0/ref/Entity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/Debug/net5.0/Entity.csproj.AssemblyReference.cache" afterDir="false" />
@@ -128,9 +115,63 @@
       <change beforePath="$PROJECT_DIR$/Entitites/obj/Entity.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/Entity.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Entitites/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entitites/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entitites/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Entitites/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Controllers/BranchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Controllers/BranchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Controllers/MoviesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Controllers/SessionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Controllers/SessionsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150203_CreatedLanguageTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150203_CreatedLanguageTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150327_AddedNavbarTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150327_AddedNavbarTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150511_AddedMoviesTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212150511_AddedMoviesTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212155441_AddedMovieTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212155441_AddedMovieTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212160155_AddedSomeTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220212160155_AddedSomeTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215115102_ChangedHallBranchRelation.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215115102_ChangedHallBranchRelation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215115646_RemovedMovieDetailTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215115646_RemovedMovieDetailTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215121656_DeletedFormatTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215121656_DeletedFormatTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215123649_RemovedMovieDetailTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220215123649_RemovedMovieDetailTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217081348_AddColumnToMovie.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217081348_AddColumnToMovie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217161953_AddDirectorColumnToTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217161953_AddDirectorColumnToTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217194052_AddedSessionTables.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217194052_AddedSessionTables.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217195545_AddedSessionRelations.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217195545_AddedSessionRelations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217200556_RemoveSessionsFromBranch.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220217200556_RemoveSessionsFromBranch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220219183823_AddColumnToTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220219183823_AddColumnToTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220219213546_AddColumnToHall.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220219213546_AddColumnToHall.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220222191413_AddedImageToBranch.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220222191413_AddedImageToBranch.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220222191543_AddedImageToBranches.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220222191543_AddedImageToBranches.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220223192405_AddColumnsToBranches.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220223192405_AddColumnsToBranches.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220224201438_SeatsTableAdded.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220224201438_SeatsTableAdded.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220224201617_AddedSeatHallRelation.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220224201617_AddedSeatHallRelation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220226223130_AddColumnToHallTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220226223130_AddColumnToHallTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220227200805_CHangedSeatsTable.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220227200805_CHangedSeatsTable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220227203707_TicketTablesCreated.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/20220227203707_TicketTablesCreated.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/Park_Cinema.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/Park_Cinema.API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/AutoMapper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/AutoMapper.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Business.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Business.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Business.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Business.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Core.dll" afterDir="false" />
@@ -139,60 +180,13 @@
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/DataAccess.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Entity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Entity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Entity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Entity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Humanizer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Humanizer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Data.SqlClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.SqlServer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Identity.Stores.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Identity.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.Identity.Client.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.OpenApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Microsoft.OpenApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Newtonsoft.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Park_Cinema.API.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.IO.Pipelines.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.IO.Pipelines.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Runtime.Caching.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/ref/Park_Cinema.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/ref/Park_Cinema.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/bin/Debug/net5.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.assets.cache" afterDir="false" />
@@ -202,12 +196,16 @@
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/Park_Cinema.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/ref/Park_Cinema.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Debug/net5.0/ref/Park_Cinema.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.EntityFrameworkCore.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/Park_Cinema.API.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Park-Cinema.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Park-Cinema.API/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,11 +223,17 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1ca262d468b4bcb96b7e2aae3a36d848d7e00/b4/f75a0490/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/fuadtag/Park-Cinema_API/Park-Cinema/Park-Cinema.API/Migrations/AppDbContextModelSnapshot.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2590fKDf91mAmGfMRdfVC0NHuyT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -315,7 +319,16 @@
       <workItem from="1644924111752" duration="311000" />
       <workItem from="1644924472460" duration="629000" />
       <workItem from="1644925117293" duration="5343000" />
+      <workItem from="1647115822260" duration="3881000" />
     </task>
+    <task id="LOCAL-00001" summary="Added BuyTicket Api">
+      <created>1645995622329</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645995622329</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +348,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Added BuyTicket Api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added BuyTicket Api" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -1,56 +1,30 @@
-﻿using Business.Abstract;
-using DataAccess.Abstract;
-using Entity.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using Business.Abstract;
+using Business.Dto.Movies;
+using Core.Repository.EFRepository;
+using DataAccess.Abstract;
+using DataAccess.Concret;
+using Entity.Dto;
+using Entity.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Business.Concret
 {
-    public class MoviesManager : IMovieService
+    public class MoviesManager : EFRepositoryBase<Movie, AppDbContext>, IMovieService 
     {
         private readonly IMovieDal _moviesDal;
-        public MoviesManager(IMovieDal moviesDal)
+        private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
+
+        public MoviesManager(IMovieDal moviesDal, AppDbContext context, IMapper mapper) : base(context)
         {
             _moviesDal = moviesDal;
-        }
-
-        public Task<bool> AddAsync(Movie entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<object> AddReturnEntityAsync(Movie entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> DeleteAsync(Movie entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<Movie>> GetAllAsync(Expression<Func<Movie, bool>> filter = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<List<Movie>> GetAllMoviesAsync()
-        {
-            return await _moviesDal.GetAllAsync();
-        }
-        
-        public Task<List<Movie>> GetAllMoviesAsync(string languageCode)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Movie> GetAsync(Expression<Func<Movie, bool>> filter = null)
-        {
-            throw new NotImplementedException();
+            _context = context;
+            _mapper = mapper;
         }
 
         public Task<Movie> GetMovieByIdAsync(int id)
@@ -58,12 +32,70 @@ namespace Business.Concret
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAsync(Movie entity)
+        public async Task<List<MovieDto>> GetAllMoviesAsync(string language)
         {
-            throw new NotImplementedException();
+            var dbLanguage = await _context.Languages.FirstOrDefaultAsync(l => l.Name.ToLower() == language.ToLower());
+
+            var languageId = dbLanguage.Id;
+            
+            var movieList = await _context.Movies
+                .Include(m => m.Languages.FirstOrDefault(l => l.LanguageId == languageId))
+                .ToListAsync();
+            return _mapper.Map<List<MovieDto>>(movieList);
         }
 
-        public Task<bool> UpdateWithEntryAsync(Movie entity, params object[] propertyNames)
+        public async Task<MovieDetailDto> GetMovieDetailByIdAsync(int id, string language)
+        {
+            var dbLanguage = await _context.Languages.FirstOrDefaultAsync(l => l.Name.ToLower() == language.ToLower());
+
+            var languageId = dbLanguage.Id;
+
+            var movieDetail = await _context.Movies
+                .Include(m => m.Languages.FirstOrDefault(l => l.LanguageId == languageId))
+                .FirstOrDefaultAsync(x => x.Id == id);
+            
+            return _mapper.Map<MovieDetailDto>(movieDetail); 
+        }
+
+        public async Task<List<MovieDto>> GetMoviesFiltered(MovieFilterDto filter, string language)
+        {
+            var dbLanguage = await _context.Languages.FirstOrDefaultAsync(l => l.Name.ToLower() == language.ToLower());
+
+            var languageId = dbLanguage.Id;
+            
+            var filteredMovies = await _context.Sessions
+                .Include(s => s.Movie)
+                .Include(s => s.Hall)
+                .Where(m => (filter.Format == null || m.Movie.Formats.Contains(filter.Format)) &&
+                            (filter.BranchId == null ||
+                             m.Movie.Sessions.Any(s => s.Hall.BranchId == filter.BranchId)) &&
+                            (filter.Language == null ||
+                             m.Movie.Languages.FirstOrDefault().Languages.ToLower()
+                                 .Contains(filter.Language.ToLower())))
+                .Select(s => s.Movie).Distinct()
+                .ToListAsync();
+
+
+            return _mapper.Map<List<MovieDto>>(filteredMovies);
+        }
+
+
+        public async Task<List<MovieDto>> GetMovieByFormat(string filter, string language)
+        {
+            var dbLanguage = await _context.Languages.FirstOrDefaultAsync(l => l.Name.ToLower() == language.ToLower());
+
+            var languageId = dbLanguage.Id;
+
+            var formatMovies = await _context.Sessions
+                .Include(s => s.Movie)
+                .ThenInclude(s => s.Languages.FirstOrDefault(l => l.LanguageId == languageId))
+                .Where(m => m.Movie.Formats.Contains(filter))
+                .Select(x => x.Movie)
+                .ToListAsync();
+            return _mapper.Map<List<MovieDto>>(formatMovies);
+        }
+
+        public Task<List<Movie>> GetAllMoviesByLanguageCodeAsync(string languageCode)
         {
             throw new NotImplementedException();
         }
